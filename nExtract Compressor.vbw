@@ -1,0 +1,14 @@
+frmMain = 198, 198, 876, 674, Z, 44, 44, 722, 520, C
+clsHuffman = 0, 0, 0, 0, C
+mdlSelectDirectory = 0, 0, 0, 0, C
+mdlLZSS3 = 0, 0, 0, 0, C
+ctlProgressBar = 0, 0, 0, 0, C, 0, 0, 0, 0, C
+ctlButton = 0, 0, 0, 0, C, 0, 0, 0, 0, C
+frmAddMultipleFiles = 0, 0, 0, 0, C, 22, 22, 700, 498, C
+ctlXPButton = 0, 0, 0, 0, C, 0, 0, 0, 0, C
+frmAbout = 0, 0, 0, 0, C, 110, 110, 788, 586, C
+frmMessages = 0, 0, 0, 0, C, 0, 0, 0, 0, C
+mdlINIFiles = 0, 0, 0, 0, C
+mdlCommonDialog = 0, 0, 0, 0, C
+mdlProba = 0, 0, 0, 0, C
+mdlCheckKey = 0, 0, 0, 0, C

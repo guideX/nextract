@@ -1,0 +1,9 @@
+frmMain = 82, 105, 890, 703, C, 97, 106, 542, 433, C
+clsHuffman = 31, 115, 695, 630, C
+mdlLZSSDeCompress = 0, 0, 564, 652, C
+ctlProgressBar = 0, 0, 0, 0, C, 44, 44, 559, 443, C
+ctlButton = 0, 0, 0, 0, C, 165, 135, 729, 787, C
+mdlChangeDir = 363, 297, 927, 949, C
+mdlProba = 132, 108, 731, 760, C
+mdlCheckKey1 = 165, 135, 764, 787, C
+frmPassword = 231, 189, 830, 841, C, 198, 162, 797, 814, C
