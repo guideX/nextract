@@ -1,6 +1,6 @@
 VERSION 5.00
 Object = "{1ABC71B2-B0F7-4C1D-9870-3DED8934B20B}#2.0#0"; "prjXTab.ocx"
-Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.0#0"; "Mscomctl.ocx"
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.0#0"; "MSCOMCTL.OCX"
 Begin VB.Form frmMain 
    Caption         =   "nExtract"
    ClientHeight    =   4410
@@ -229,7 +229,6 @@ Begin VB.Form frmMain
       _ExtentX        =   13785
       _ExtentY        =   6165
       TabCaption(0)   =   "Files"
-      TabPicture(0)   =   "frmMain1.frx":1F51C0
       TabContCtrlCnt(0)=   7
       Tab(0)ContCtrlCap(1)=   "lvwFiles"
       Tab(0)ContCtrlCap(2)=   "cmdAdd"
@@ -239,7 +238,6 @@ Begin VB.Form frmMain
       Tab(0)ContCtrlCap(6)=   "cmdSelectAll"
       Tab(0)ContCtrlCap(7)=   "cmdSelectNone"
       TabCaption(1)   =   "Configure"
-      TabPicture(1)   =   "frmMain1.frx":1F5A12
       TabContCtrlCnt(1)=   15
       Tab(1)ContCtrlCap(1)=   "txtPassword"
       Tab(1)ContCtrlCap(2)=   "txtAuthor"
@@ -257,7 +255,6 @@ Begin VB.Form frmMain
       Tab(1)ContCtrlCap(14)=   "lblProjectName"
       Tab(1)ContCtrlCap(15)=   "lblOutputDirectory"
       TabCaption(2)   =   "Make"
-      TabPicture(2)   =   "frmMain1.frx":1F6764
       TabContCtrlCnt(2)=   21
       Tab(2)ContCtrlCap(1)=   "ctlTotalProgress"
       Tab(2)ContCtrlCap(2)=   "cmdRipToIso"
@@ -429,7 +426,7 @@ Begin VB.Form frmMain
          FCOLO           =   16711680
          MCOL            =   12632256
          MPTR            =   0
-         MICON           =   "frmMain1.frx":1F6FB6
+         MICON           =   "frmMain1.frx":1F51C0
          UMCOL           =   -1  'True
          SOFT            =   0   'False
          PICPOS          =   0
@@ -468,7 +465,7 @@ Begin VB.Form frmMain
          FCOLO           =   16711680
          MCOL            =   12632256
          MPTR            =   0
-         MICON           =   "frmMain1.frx":1F6FD2
+         MICON           =   "frmMain1.frx":1F51DC
          UMCOL           =   -1  'True
          SOFT            =   0   'False
          PICPOS          =   0
@@ -506,7 +503,7 @@ Begin VB.Form frmMain
          FCOLO           =   16711680
          MCOL            =   12632256
          MPTR            =   0
-         MICON           =   "frmMain1.frx":1F6FEE
+         MICON           =   "frmMain1.frx":1F51F8
          UMCOL           =   -1  'True
          SOFT            =   0   'False
          PICPOS          =   0
@@ -575,7 +572,7 @@ Begin VB.Form frmMain
          FCOLO           =   16711680
          MCOL            =   12632256
          MPTR            =   0
-         MICON           =   "frmMain1.frx":1F700A
+         MICON           =   "frmMain1.frx":1F5214
          UMCOL           =   -1  'True
          SOFT            =   0   'False
          PICPOS          =   0
@@ -602,7 +599,7 @@ Begin VB.Form frmMain
          MultiLine       =   -1  'True
          ScrollBars      =   2  'Vertical
          TabIndex        =   20
-         Text            =   "frmMain1.frx":1F7026
+         Text            =   "frmMain1.frx":1F5230
          Top             =   1680
          Width           =   5655
       End
@@ -652,8 +649,8 @@ Begin VB.Form frmMain
          FCOLO           =   16711680
          MCOL            =   12632256
          MPTR            =   0
-         MICON           =   "frmMain1.frx":1F7031
-         PICN            =   "frmMain1.frx":1F704D
+         MICON           =   "frmMain1.frx":1F523B
+         PICN            =   "frmMain1.frx":1F5257
          UMCOL           =   -1  'True
          SOFT            =   0   'False
          PICPOS          =   0
@@ -691,8 +688,8 @@ Begin VB.Form frmMain
          FCOLO           =   16711680
          MCOL            =   12632256
          MPTR            =   0
-         MICON           =   "frmMain1.frx":220C6F
-         PICN            =   "frmMain1.frx":220C8B
+         MICON           =   "frmMain1.frx":21EE79
+         PICN            =   "frmMain1.frx":21EE95
          UMCOL           =   -1  'True
          SOFT            =   0   'False
          PICPOS          =   0
@@ -730,8 +727,8 @@ Begin VB.Form frmMain
          FCOLO           =   16711680
          MCOL            =   12632256
          MPTR            =   0
-         MICON           =   "frmMain1.frx":24A8AD
-         PICN            =   "frmMain1.frx":24A8C9
+         MICON           =   "frmMain1.frx":248AB7
+         PICN            =   "frmMain1.frx":248AD3
          UMCOL           =   -1  'True
          SOFT            =   0   'False
          PICPOS          =   0
@@ -770,8 +767,8 @@ Begin VB.Form frmMain
          FCOLO           =   16711680
          MCOL            =   12632256
          MPTR            =   0
-         MICON           =   "frmMain1.frx":2744EB
-         PICN            =   "frmMain1.frx":274507
+         MICON           =   "frmMain1.frx":2726F5
+         PICN            =   "frmMain1.frx":272711
          UMCOL           =   -1  'True
          SOFT            =   0   'False
          PICPOS          =   0
@@ -809,8 +806,8 @@ Begin VB.Form frmMain
          FCOLO           =   16711680
          MCOL            =   12632256
          MPTR            =   0
-         MICON           =   "frmMain1.frx":29E129
-         PICN            =   "frmMain1.frx":29E145
+         MICON           =   "frmMain1.frx":29C333
+         PICN            =   "frmMain1.frx":29C34F
          UMCOL           =   -1  'True
          SOFT            =   0   'False
          PICPOS          =   0
@@ -848,8 +845,8 @@ Begin VB.Form frmMain
          FCOLO           =   16711680
          MCOL            =   12632256
          MPTR            =   0
-         MICON           =   "frmMain1.frx":2C7D67
-         PICN            =   "frmMain1.frx":2C7D83
+         MICON           =   "frmMain1.frx":2C5F71
+         PICN            =   "frmMain1.frx":2C5F8D
          UMCOL           =   -1  'True
          SOFT            =   0   'False
          PICPOS          =   0
