@@ -102,7 +102,9 @@
 		<col def="S0">ISDotNetInstallerArgsCommit</col>
 		<col def="S0">ISDotNetInstallerArgsUninstall</col>
 		<col def="S0">ISDotNetInstallerArgsRollback</col>
-		<row><td>DefaultComponent</td><td>{1FBF482E-F530-4387-BD77-7F57FD75C9AE}</td><td>TARGETDIR</td><td>0</td><td/><td/><td>51729</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>DefaultComponent</td><td>{1FBF482E-F530-4387-BD77-7F57FD75C9AE}</td><td>TARGETDIR</td><td>0</td><td/><td>nexgen.ico</td><td>51729</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>TARGETDIRSelfRegFiles</td><td>{BEFA78C4-ED0A-47CE-B627-29D46FAD48FD}</td><td>TARGETDIR</td><td>0</td><td/><td>prjxtab.ocx</td><td>51730</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>TARGETDIRSharedSelfRegFiles</td><td>{A7B538EF-6221-423D-A67A-F158DD9B096F}</td><td>TARGETDIR</td><td>8</td><td/><td>mscomctl.ocx</td><td>51730</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 	</table>
 
 	<table name="Control">
@@ -163,6 +165,7 @@
 		<row><td>WINDIR</td><td/><td>Windows</td><td/><td>0</td><td/></row>
 		<row><td>WINSYSDIR</td><td>WINDIR</td><td>Windows System</td><td/><td>0</td><td/></row>
 		<row><td>WINSYSDIR64</td><td>WINDIR</td><td>Windows System (64-bit)</td><td/><td>0</td><td/></row>
+		<row><td>newfolder1</td><td>ProgramMenuFolder</td><td>##ID_STRING2##</td><td/><td>1</td><td>newfolder1</td></row>
 	</table>
 
 	<table name="Feature">
@@ -178,12 +181,15 @@
 		<col def="S255">ISComments</col>
 		<col def="S255">ISFeatureCabName</col>
 		<col def="S255">ISProFeatureName</col>
+		<row><td>{79B8F022-BC62-4221-AF15-A6D9C7A8931B}</td><td/><td>##ID_STRING1##</td><td/><td>4</td><td>1</td><td>TARGETDIR</td><td>0</td><td/><td/><td/><td>ScannedProject1</td></row>
 		<row><td>{D2C594A5-04B8-4A91-8D4B-C5E362EF315F}</td><td/><td>DefaultFeature</td><td/><td>2</td><td>1</td><td>TARGETDIR</td><td>0</td><td/><td/><td/><td>DefaultFeature</td></row>
 	</table>
 
 	<table name="FeatureComponents">
 		<col key="yes" def="s38">Feature_</col>
 		<col key="yes" def="s72">Component_</col>
+		<row><td>{79B8F022-BC62-4221-AF15-A6D9C7A8931B}</td><td>TARGETDIRSelfRegFiles</td></row>
+		<row><td>{79B8F022-BC62-4221-AF15-A6D9C7A8931B}</td><td>TARGETDIRSharedSelfRegFiles</td></row>
 		<row><td>{D2C594A5-04B8-4A91-8D4B-C5E362EF315F}</td><td>DefaultComponent</td></row>
 	</table>
 
@@ -199,6 +205,12 @@
 		<col def="S255">ISBuildSourcePath</col>
 		<col def="I4">ISAttributes</col>
 		<col def="S72">ISComponentSubFolder_</col>
+		<row><td>mscomctl.ocx</td><td>TARGETDIRSharedSelfRegFiles</td><td>MSCOMCTL.OCX</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;ProgramFilesFolder&gt;\nexencode studio\MSCOMCTL.OCX</td><td>1</td><td/></row>
+		<row><td>nexgen.ico</td><td>DefaultComponent</td><td>nexgen.ico</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;PATH_TO_NEXTRACT_FILES&gt;\nexgen.ico</td><td>1</td><td/></row>
+		<row><td>nextract.exe</td><td>DefaultComponent</td><td>nExtract.exe</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;PATH_TO_NEXTRACT_FILES&gt;\nExtract.exe</td><td>1</td><td/></row>
+		<row><td>nssa.exe</td><td>DefaultComponent</td><td>NSSA.exe</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;PATH_TO_NEXTRACT_FILES&gt;\NSSA.exe</td><td>1</td><td/></row>
+		<row><td>prjxtab.ocx</td><td>TARGETDIRSelfRegFiles</td><td>prjXTab.ocx</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;WindowsFolder&gt;\syswow64\prjXTab.ocx</td><td>1</td><td/></row>
+		<row><td>team_nexgen_website.url</td><td>DefaultComponent</td><td>Team Nexgen Website.url</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;PATH_TO_HTML_FILES&gt;\Team Nexgen Website.url</td><td>1</td><td/></row>
 	</table>
 
 	<table name="Font">
@@ -217,8 +229,9 @@
 		<col def="S255">Data</col>
 		<row><td>BiildCDROMEnabled</td><td/></row>
 		<row><td>BiildInternetEnabled</td><td/></row>
-		<row><td>BiildSingleExeEnabled</td><td/></row>
+		<row><td>BiildSingleExeEnabled</td><td>Yes</td></row>
 		<row><td>BiildSingleMSIEnabled</td><td/></row>
+		<row><td>PROJECT_ASSISTANT_LICENSE_FILE</td><td/></row>
 	</table>
 
 	<table name="ISComponentExtended">
@@ -231,6 +244,8 @@
 		<col def="S0">HTTPLocation</col>
 		<col def="S0">Miscellaneous</col>
 		<row><td>DefaultComponent</td><td/><td/><td>_56524FFA_48C1_4041_82D3_7EE30F92FA0D_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>TARGETDIRSelfRegFiles</td><td/><td/><td>_03485476_364B_4E6C_8246_93D366CE6B1D_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>TARGETDIRSharedSelfRegFiles</td><td/><td/><td>_766C5E3D_D6BC_4840_9D47_B210D8B2A2D8_FILTER</td><td/><td/><td/><td/></row>
 	</table>
 
 	<table name="ISComponentSubFolder">
@@ -297,6 +312,7 @@
 		<col def="S255">Password</col>
 		<col def="S50">CDRomFolder</col>
 		<col def="S50">Moniker</col>
+		<row><td>{79B8F022-BC62-4221-AF15-A6D9C7A8931B}</td><td/><td/><td/><td/><td/><td/><td/><td/><td>36</td><td/><td/><td/></row>
 		<row><td>{D2C594A5-04B8-4A91-8D4B-C5E362EF315F}</td><td/><td/><td/><td/><td/><td/><td/><td/><td>36</td><td/><td/><td/></row>
 	</table>
 
@@ -424,6 +440,9 @@
 		<row><td>ISProductFolder</td><td/><td/><td>1</td></row>
 		<row><td>ISProjectDataFolder</td><td/><td/><td>1</td></row>
 		<row><td>ISProjectFolder</td><td/><td/><td>1</td></row>
+		<row><td>PATH_TO_DESKTOP_FILES</td><td>C:\Users\giuideX\Desktop</td><td/><td>2</td></row>
+		<row><td>PATH_TO_HTML_FILES</td><td>C:\dev\nexencode\4.28\html</td><td/><td>2</td></row>
+		<row><td>PATH_TO_NEXTRACT_FILES</td><td>C:\dev\nExtract</td><td/><td>2</td></row>
 		<row><td>ProgramFilesFolder</td><td/><td/><td>1</td></row>
 		<row><td>SystemFolder</td><td/><td/><td>1</td></row>
 		<row><td>WindowsFolder</td><td/><td/><td>1</td></row>
@@ -490,6 +509,7 @@
 		<col def="S255">DotNetBuildConfiguration</col>
 		<col def="S255">MsiCommandLine</col>
 		<col def="I4">ISSetupPrerequisiteLocation</col>
+		<row><td>SINGLE_EXE_IMAGE</td><td>Media</td><td/><td>PackageName</td><td>0</td><td>1033</td><td>2</td><td>1</td><td>Intel</td><td/><td>1033</td><td>3</td><td>0</td><td>0</td><td>0</td><td/><td>0</td><td/><td>MediaLocation</td><td/><td>http://</td><td/><td/><td/><td/><td>12</td><td/><td/><td/><td/></row>
 	</table>
 
 	<table name="ISReleasePro">
@@ -514,6 +534,7 @@
 		<col def="S255">InitDlgProductName</col>
 		<col def="I4">Attributes</col>
 		<col def="S255">CertPassword</col>
+		<row><td>SINGLE_EXE_IMAGE</td><td>Media</td><td/><td/><td>{972F5E67-8BA7-40C0-957E-A52E38A83763}</td><td>nextract15.exe</td><td>&lt;PATH_TO_DESKTOP_FILES&gt;\Tpdkdesign.net-Refresh-Cl-System-Install-1.ico,0</td><td/><td/><td>-1</td><td/><td>-1</td><td/><td/><td/><td/><td/><td/><td/><td>15296</td><td/></row>
 	</table>
 
 	<table name="ISReleaseProDataAsFiles">
@@ -722,13 +743,18 @@
 	<table name="ISSetupTypeFeatures">
 		<col key="yes" def="s38">ISSetupType_</col>
 		<col key="yes" def="s38">Feature_</col>
+		<row><td>Complete</td><td>{79B8F022-BC62-4221-AF15-A6D9C7A8931B}</td></row>
 		<row><td>Complete</td><td>{D2C594A5-04B8-4A91-8D4B-C5E362EF315F}</td></row>
+		<row><td>Custom</td><td>{79B8F022-BC62-4221-AF15-A6D9C7A8931B}</td></row>
 		<row><td>Custom</td><td>{D2C594A5-04B8-4A91-8D4B-C5E362EF315F}</td></row>
 	</table>
 
 	<table name="ISShortcutComponents">
 		<col key="yes" def="s38">Shortcut_</col>
 		<col key="yes" def="s72">Component_</col>
+		<row><td>NewShortcut1</td><td>DefaultComponent</td></row>
+		<row><td>NewShortcut2</td><td>DefaultComponent</td></row>
+		<row><td>NewShortcut3</td><td>DefaultComponent</td></row>
 	</table>
 
 	<table name="ISStorages">
@@ -749,6 +775,11 @@
 		<row><td>IDPROP_SETUPTYPE_CUSTOM_DESC_PRO</td><td>1033</td><td>Custom</td><td>0</td><td/><td>-1264733792</td></row>
 		<row><td>IDS_SQLSCRIPT_INSTALLING</td><td>1033</td><td>Executing SQL Install Script...</td><td>0</td><td/><td>-1264733792</td></row>
 		<row><td>IDS_SQLSCRIPT_UNINSTALLING</td><td>1033</td><td>Executing SQL Uninstall Script...</td><td>0</td><td/><td>-1264733792</td></row>
+		<row><td>ID_STRING1</td><td>1033</td><td>ScannedProject1</td><td>0</td><td/><td>-1264510738</td></row>
+		<row><td>ID_STRING2</td><td>1033</td><td>nExtract</td><td>0</td><td/><td>-1264514738</td></row>
+		<row><td>ID_STRING3</td><td>1033</td><td>nExtract</td><td>0</td><td/><td>-1264506546</td></row>
+		<row><td>ID_STRING4</td><td>1033</td><td>Team Nexgen Website</td><td>0</td><td/><td>-1264472626</td></row>
+		<row><td>ID_STRING5</td><td>1033</td><td>nExtract</td><td>0</td><td/><td>-1264462386</td></row>
 	</table>
 
 	<table name="ISVirtualDirectory">
@@ -827,6 +858,9 @@
 		<col def="V0">Data</col>
 		<col def="S255">ISBuildSourcePath</col>
 		<col def="I2">ISIconIndex</col>
+		<row><td>NewShortcut1_BF84E6C230CD414399624656F7BD985D.exe</td><td/><td>&lt;TARGETDIR&gt;\nexgen.ico</td><td/></row>
+		<row><td>NewShortcut2_9651269F95334E5090E2693D810737DF.url</td><td/><td>&lt;TARGETDIR&gt;\nexgen.ico</td><td/></row>
+		<row><td>NewShortcut3_E30DB02293044B4B9A4D67AB95AA6EEF.exe</td><td/><td>&lt;TARGETDIR&gt;\nexgen.ico</td><td/></row>
 	</table>
 
 	<table name="InstallShield">
@@ -834,6 +868,9 @@
 		<col def="S0">Value</col>
 		<row><td>ActiveLanguage</td><td>1033</td></row>
 		<row><td>Comments</td><td/></row>
+		<row><td>CurrentMedia</td><td dt:dt="bin.base64" md5="bda357a34262bb9777365025e93dc2dd">
+UwBJAE4ARwBMAEUAXwBFAFgARQBfAEkATQBBAEcARQABAE0AZQBkAGkAYQA=
+			</td></row>
 		<row><td>DoMaintenance</td><td>1</td></row>
 		<row><td>GenerateMIF</td><td>0</td></row>
 		<row><td>ISCompilerOption_CompileBeforeBuild</td><td>1</td></row>
@@ -860,7 +897,8 @@
 		<row><td>SchemaVersion</td><td>770</td></row>
 		<row><td>Script</td><td>1</td></row>
 		<row><td>SetupArguments</td><td/></row>
-		<row><td>TARGETDIR</td><td>&lt;FOLDER_APPLICATIONS&gt;\&lt;IFX_COMPANY_NAME&gt;\&lt;IFX_PRODUCT_NAME&gt;</td></row>
+		<row><td>Skin</td><td>&lt;ISProductFolder&gt;\Skins\Blue.skin</td></row>
+		<row><td>TARGETDIR</td><td>&lt;FOLDER_APPLICATIONS&gt;\&lt;IFX_PRODUCT_NAME&gt;</td></row>
 		<row><td>Type</td><td>PRO</td></row>
 	</table>
 
@@ -910,9 +948,10 @@
 		<col key="yes" def="s72">Property</col>
 		<col def="L0">Value</col>
 		<col def="S255">ISComments</col>
+		<row><td>ARPURLINFOABOUT</td><td>http://www.team-nexgen.org</td><td/></row>
 		<row><td>DWUSINTERVAL</td><td>30</td><td/></row>
 		<row><td>DefaultUIFont</td><td>Tahoma8</td><td/></row>
-		<row><td>ISAppExeFile</td><td>YourApp.exe</td><td/></row>
+		<row><td>ISAppExeFile</td><td>nExtract.exe</td><td/></row>
 		<row><td>ISENABLEDWUSFINISHDIALOG</td><td/><td/></row>
 		<row><td>ISVROOT_PORT_NO</td><td>0</td><td/></row>
 		<row><td>IS_SQLSERVER_AUTHENTICATION</td><td>0</td><td/></row>
@@ -920,7 +959,7 @@
 		<row><td>IS_SQLSERVER_PASSWORD</td><td/><td/></row>
 		<row><td>IS_SQLSERVER_SERVER</td><td/><td/></row>
 		<row><td>IS_SQLSERVER_USERNAME</td><td>sa</td><td/></row>
-		<row><td>Manufacturer</td><td>My Company Name</td><td/></row>
+		<row><td>Manufacturer</td><td>Team Nexgen</td><td/></row>
 		<row><td>PROGMSG_IIS_CREATEAPPPOOL</td><td>##IDS_PROGMSG_IIS_CREATEAPPPOOL##</td><td/></row>
 		<row><td>PROGMSG_IIS_CREATEAPPPOOLS</td><td>##IDS_PROGMSG_IIS_CREATEAPPPOOLS##</td><td/></row>
 		<row><td>PROGMSG_IIS_CREATEVROOT</td><td>##IDS_PROGMSG_IIS_CREATEVROOT##</td><td/></row>
@@ -1001,6 +1040,9 @@
 		<col def="S255">ISComments</col>
 		<col def="S255">ISShortcutName</col>
 		<col def="I4">ISAttributes</col>
+		<row><td>NewShortcut1</td><td>newfolder1</td><td>##ID_STRING3##</td><td/><td>&lt;TARGETDIR&gt;\nExtract.exe</td><td/><td/><td/><td>NewShortcut1_BF84E6C230CD414399624656F7BD985D.exe</td><td>0</td><td>1</td><td>TARGETDIR</td><td/><td/><td/><td/><td/><td>NewShortcut1</td><td>18</td></row>
+		<row><td>NewShortcut2</td><td>newfolder1</td><td>##ID_STRING4##</td><td/><td>&lt;TARGETDIR&gt;\Team Nexgen Website.url</td><td/><td/><td/><td>NewShortcut2_9651269F95334E5090E2693D810737DF.url</td><td>0</td><td>1</td><td/><td/><td/><td/><td/><td/><td>NewShortcut2</td><td>18</td></row>
+		<row><td>NewShortcut3</td><td>DesktopFolder</td><td>##ID_STRING5##</td><td/><td>&lt;TARGETDIR&gt;\nExtract.exe</td><td/><td/><td/><td>NewShortcut3_E30DB02293044B4B9A4D67AB95AA6EEF.exe</td><td>0</td><td>1</td><td>TARGETDIR</td><td/><td/><td/><td/><td/><td>NewShortcut3</td><td>18</td></row>
 	</table>
 
 	<table name="TextStyle">
